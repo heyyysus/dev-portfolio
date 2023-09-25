@@ -5,24 +5,32 @@ import React from 'react';
 
 const Navigation: React.FC = () => {
   return (
-    <nav className="bg-blue-600 p-4">
-      <ul className="flex space-x-4">
-        <li>
-          <Link className="text-white hover:text-blue-300" href="/">
-            Home
-          </Link>
-        </li>
-        <li>
-            <Link className='text-white hover:text-blue-300' href='/about'>
-                About
+    <nav className="bg-transparent p-4 flex justify-between w-fill px-10">
+      <div>
+        Logo
+      </div>
+      <div className=''>
+        <ul className="flex space-x-4">
+          <li>
+            <Link className="hover:text-blue-300" href="/">
+              Home
             </Link>
-        </li>
-        <li>
-            <Link className="text-white hover:text-blue-300" href="/contact">
-                Contact
-            </Link>
-        </li>
-      </ul>
+          </li>
+          <li>
+              <Link className='hover:text-blue-300' href='/about'>
+                  About
+              </Link>
+          </li>
+          <li>
+              <Link className="hover:text-blue-300" href="/contact">
+                  Contact
+              </Link>
+          </li>
+          <li>
+            
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };
