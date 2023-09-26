@@ -12,7 +12,7 @@ export default function Home() {
           Jesus Velarde
         </p>
         <p className=''>
-          And I'm a <span className='text-green'>Full-Stack Developer</span>
+          And I&apos;m a <span className='text-green'>Full-Stack Developer</span>
         </p>
       </div>
     </main>
