@@ -5,12 +5,12 @@ import React from 'react';
 
 const Navigation: React.FC = () => {
   return (
-    <nav className="bg-transparent p-4 flex justify-between w-fill px-10">
+    <nav className="bg-transparent p-4 flex justify-between w-fill px-10 py-7 font-mono text-sm">
       <div>
         Logo
       </div>
       <div className=''>
-        <ul className="flex space-x-4">
+        <ul className="flex space-x-10">
           <li>
             <Link className="hover:text-blue-300" href="/">
               Home
