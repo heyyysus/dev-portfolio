@@ -30,7 +30,7 @@ const config: Config = {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
         }
-    },
+      },
     },
     delay: { // Add these delays if you don't have them yet
       '100': '100ms',
