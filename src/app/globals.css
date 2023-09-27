@@ -2,17 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
-  --foreground-color: 0, 0, 0;
-  --background-color: 214, 219, 220;
+  --foreground-color: #4bbd99;
+  --background-color: #161529;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-color: #4bbd99;
-    --background-color: #161529;
-  }
-}
 
 html {
   scroll-behavior: smooth;
