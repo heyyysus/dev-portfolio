@@ -7,16 +7,16 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 export default function Home() {
   return (
     <main className="flex flex-col justify-space-between">
-      <div className='text-2xl xl:text-5xl 2xl:text-5xl lg:text-4xl md:text-3xl " font-bold text-white font-sans h-[100vh] p-24'>
+      <div className='text-2xl xl:text-5xl 2xl:text-5xl lg:text-4xl md:text-3xl font-bold text-white font-sans h-[100vh] p-10 md:p-24'>
         <div className='flex flex-row content-center items-center'>
-          <div className='mr-40'>
-            <p className='mb-5 text-xl font-light animate-fadeInFast'>
+          <div className='mr-20 md:mr-40'>
+            <p className='mb-5 text-sm md:text-xl font-light animate-fadeInFast'>
               Hello, my name is
             </p>
-            <p className='mb-5 text-[color:#9badcf] text-7xl animate-fadeIn'>
+            <p className='mb-5 text-[color:#9badcf] text-xl md:text-4xl lg:text-7xl animate-fadeIn'>
               Jesus Velarde
             </p>
-            <p className='animate-fadeInSlow'>
+            <p className='animate-fadeInSlow text-base md:text-3xl lg:text-4xl xl:text-5xl'>
               And I&apos;m a <span className='text-green'>Full-Stack Developer</span>
             </p>
 

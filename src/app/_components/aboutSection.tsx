@@ -8,7 +8,7 @@ export const AboutSection: FC<AboutSectionProps> =  ({}) => {
     return (
     <div
     id = 'about'
-    className='flex flex-row justify-center items-center bg-[#CCCCCC] h-[100vh] w-full'>
+    className='flex flex-row justify-center items-center bg-grey h-[100vh] w-full'>
         <div className='flex flex-row justify-center items-center content-center'>
           <div className='font-sans w-[700px] h-fit p-10 bg-blue-dark rounded-md mr-5 pb-20'>
             <h1 className='text-2xl font-bold text-white mb-5 animate-fadeInFast'>About Me</h1>
