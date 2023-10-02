@@ -6,29 +6,12 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 export interface LandingSectionProps {};
 
-function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window;
-    return {
-        width,
-        height
-    };
-}
-
 export const LandingSection: FC<LandingSectionProps> =  ({}) => {
 
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-
-    useEffect(() => {
-        function handleResize() {
-        setWindowDimensions(getWindowDimensions());
-        }
-
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, []);
+    
 
     return (
-        <div className='text-2xl xl:text-5xl 2xl:text-5xl lg:text-4xl md:text-3xl font-bold text-white font-sans h-[100vh] p-10 md:p-24'>
+        <div className='mt-20 md:mt-0 text-2xl xl:text-5xl 2xl:text-5xl lg:text-4xl md:text-3xl font-bold text-white font-sans h-[100vh] p-10 md:p-24'>
         <div className='flex flex-row content-center items-center'>
           <div className='mr-20 md:mr-40'>
             <p className='mb-5 text-sm md:text-xl font-light animate-fadeInFast'>
@@ -60,8 +43,8 @@ export const LandingSection: FC<LandingSectionProps> =  ({}) => {
               <Image 
                 src={'/images/linkedin.jpeg'}
                 alt={''} 
-                width={windowDimensions.width < 768 ? 150 : 250}
-                height={windowDimensions.width < 768 ? 150 : 250}
+                width={250}
+                height={250}
               />
             </div>
           </div>

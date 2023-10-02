@@ -27,11 +27,13 @@ const Navigation: React.FC = () => {
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth" });
     }
+
+    setShowMenu(false);
   };
 
   return (
     <>
-      <nav className="bg-blue-dark flex justify-between w-fill px-10 font-mono text-sm">
+      <nav className="bg-blue-dark flex justify-between w-fill px-10 font-mono text-sm md:static fixed w-screen">
         <div className='py-7'>
           Logo
         </div>
@@ -63,9 +65,13 @@ const Navigation: React.FC = () => {
       </nav>
       {
         showMenu ? (
-          <div className='md:hidden block transition-all bg-blue-light'>
+          <>
+          <div className='bg-[#000000] opacity-70 fixed top-0 left-0 right-0 bottom-0 z-[1000]' onClick={handleMenuClick}>
+
+          </div>
+          <div className={`z-[1001] rounded fixed top-0 right-0 w-[60vw] h-screen overflow-hidden md:hidden block transition-all bg-blue-light font-mono text-sm py-5`}>
             <ul className='flex flex-col'>
-              <li className='mt-5'>
+              <li className=''>
                 <NavItem label='About' href='#about' onClick={handleLinkClick} />
               </li>
               <li className=''>
@@ -76,6 +82,7 @@ const Navigation: React.FC = () => {
               </li>
             </ul>
           </div>
+          </>
         ) : <></>
       }
     </>

@@ -13,8 +13,8 @@ export const NavItem: FC<NavItemProps> =  ({label, href, onClick}) => {
         <Link 
         href={href} 
         onClick={onClick}
-        className={`px-8 py-6 hover:text-white hover:bg-blue-light flex flex-row content-center transition-all
-                    border-solid hover:border-b-2 border-green`}
+        className={`md:px-8 md:py-6 px-8 py-3 hover:text-white hover:bg-blue-light flex flex-row content-center transition-all
+                    md:border-solid hover:border-b-2 md:border-green border-none`}
             >
             <span>{label}</span>
         </Link>

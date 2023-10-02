@@ -9,8 +9,7 @@ export interface MenuBtnProps {
 const MenuBtn: FC<MenuBtnProps> = ({ onClick }) => {
   return (
     <div onClick={onClick} className={`p-1 border-solid border-2 
-    rounded-md hover:cursor-pointer 
-    hover:text-white transition-all mt-3`}>
+    rounded-md hover:cursor-pointer transition-all mt-3`}>
       <span>
         <MenuIcon sx={{
             fontSize: 30,

@@ -10,7 +10,7 @@ export const AboutSection: FC<AboutSectionProps> =  ({}) => {
     id = 'about'
     className='flex flex-row justify-center items-center bg-white h-[100vh] w-full'>
         <div className='flex flex-row justify-center items-center content-center'>
-          <div className='font-sans md:w-[700px] md:h-fit w-screen h-screen p-10 bg-blue-dark rounded-md mr-5 pb-20'>
+          <div className='font-sans md:w-[700px] md:h-fit w-[90vw] h-[90vh] p-10 bg-blue-dark rounded-md pb-20'>
             <h1 className='text-2xl font-bold text-white mb-5 animate-fadeInFast'>About Me</h1>
             <p className='text-base text-grey font-mono animate-fadeIn'>
               I&apos;m a Full-Stack Developer with a passion for creating
