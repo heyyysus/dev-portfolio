@@ -60,8 +60,8 @@ export const LandingSection: FC<LandingSectionProps> =  ({}) => {
               <Image 
                 src={'/images/linkedin.jpeg'}
                 alt={''} 
-                width={windowDimensions.width < 768 ? 175 : 250}
-                height={windowDimensions.width < 768 ? 175 : 250}
+                width={windowDimensions.width < 768 ? 150 : 250}
+                height={windowDimensions.width < 768 ? 150 : 250}
               />
             </div>
           </div>
