@@ -13,7 +13,7 @@ export const LandingSection: FC<LandingSectionProps> =  ({}) => {
 
     return (
         <div className='mt-20 md:mt-0 text-2xl xl:text-5xl 2xl:text-5xl lg:text-4xl md:text-3xl font-bold text-white font-sans h-[100vh] p-10 md:p-24'>
-        <div className='flex md:flex-row flex-col-reverse content-center items-center'>
+        <div className='flex md:flex-row flex-col-reverse content-center md:items-center'>
           <div className='mr-10 md:mr-40'>
             <p className='mb-5 text-sm md:text-xl font-light animate-fadeInFast'>
               Hello, my name is
@@ -40,7 +40,7 @@ export const LandingSection: FC<LandingSectionProps> =  ({}) => {
 
           </div>
           <div className='flex flex-col justify-center content-center animate-fadeInSlow mb-10'>
-            <div className='md:rounded-full overflow-hidden w-[25vw]'>
+            <div className='rounded-full border-[none] outline outline-2 overflow-hidden w-[25vw]'>
               <ResponsiveImage src='/images/linkedin.jpeg' alt="" />
             </div>
           </div>
