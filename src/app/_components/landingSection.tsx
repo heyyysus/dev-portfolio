@@ -40,7 +40,7 @@ export const LandingSection: FC<LandingSectionProps> =  ({}) => {
 
           </div>
           <div className='flex flex-col justify-center content-center animate-fadeInSlow mb-10'>
-            <div className='rounded-full border-[none] outline outline-2 overflow-hidden w-[25vw] transform-[translateZ(0)]'>
+            <div className='md:rounded-full border-[none] outline md:outline-4 outline-2 overflow-hidden w-[25vw]'>
               <ResponsiveImage src='/images/linkedin.jpeg' alt="" />
             </div>
           </div>
