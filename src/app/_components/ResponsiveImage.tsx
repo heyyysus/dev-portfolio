@@ -13,7 +13,6 @@ export default function ResponsiveImage(props: ResponsiveImageProps) {
         src={props.src} 
         alt={props.alt}
         layout="fill"
-        objectFit="cover"
       />
     </div>
   );
