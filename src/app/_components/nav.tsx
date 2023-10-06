@@ -8,6 +8,7 @@ import ArticleIcon from '@mui/icons-material/Article';
 import { DownloadBtn } from './downloadBtn';
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuBtn from './menuBtn';
+import DownloadIcon from '@mui/icons-material/Download';
 
 const Navigation: React.FC = () => {
 
@@ -79,6 +80,20 @@ const Navigation: React.FC = () => {
               </li>
               <li className=''>
                 <NavItem label='Projects' href='#' />
+              </li>
+              <li className='mt-5'>
+              <a 
+                href="files/Resume_Jesus_Velarde.pdf" 
+                target='_blank'
+                className={`px-8 text-green hover:bg-blue-light flex flex-row content-center transition-all
+                            md:border-solid hover:border-b-2 md:border-green border-none font-mono`}
+                    >
+                    <DownloadIcon />
+                    <span className='ml-2 pt-0.5'
+                    >
+                      Resume
+                    </span>
+              </a>
               </li>
             </ul>
           </div>
