@@ -12,6 +12,7 @@ const config: Config = {
       'blue-dark': '#161529',
       'blue-light': '#2a2842',
       'grey': '#cccccc',
+      'grey-dark': '#555555',
       'white': '#FFFFFF'
     },
     extend: {
