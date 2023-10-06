@@ -50,7 +50,7 @@ const Navigation: React.FC = () => {
             </li>
             <li>
               <div className='mt-[15px] ml-4'>
-                <DownloadBtn href='#'>
+                <DownloadBtn href='/files/Resume_Jesus_Velarde.pdf'>
                   <ArticleIcon /> 
                   <span className='ml-2 pt-0.5'>Resume</span>
                 </DownloadBtn>
