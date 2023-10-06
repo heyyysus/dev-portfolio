@@ -3,7 +3,7 @@ import { FC, useEffect, useState } from 'react';
 import Image from 'next/image';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import ResponsiveImage from './ResponsiveImage';
+import ResponsiveImage from '../_components/ResponsiveImage';
 
 export interface LandingSectionProps {};
 
