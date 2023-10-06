@@ -44,7 +44,7 @@ const Navigation: React.FC = () => {
               <NavItem label='About' href='#about' onClick={handleLinkClick} />
             </li>
             <li>
-              <NavItem label='Experience' href='#' />
+              <NavItem label='Experience' href='#experience' onClick={handleLinkClick} />
             </li>
             <li>
               <NavItem label='Projects' href='#' />
