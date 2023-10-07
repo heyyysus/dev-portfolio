@@ -16,6 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>Jesus Velarde</title>
+      </head>
       <body>
         <Navigation />
         {children}
