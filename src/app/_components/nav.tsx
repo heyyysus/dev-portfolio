@@ -47,7 +47,7 @@ const Navigation: React.FC = () => {
               <NavItem label='Experience' href='#experience' onClick={handleLinkClick} />
             </li>
             <li>
-              <NavItem label='Projects' href='#' />
+              <NavItem label='Projects' href='#projects' onClick={handleLinkClick} />
             </li>
             <li>
               <div className='mt-[15px] ml-4'>
@@ -79,7 +79,7 @@ const Navigation: React.FC = () => {
                 <NavItem label='Experience' href='#experience' onClick={handleLinkClick} />
               </li>
               <li className=''>
-                <NavItem label='Projects' href='#' />
+                <NavItem label='Projects' href='#projects' onClick={handleLinkClick} />
               </li>
               <li className='mt-5'>
               <a 

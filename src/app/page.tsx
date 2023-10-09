@@ -5,6 +5,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import { LandingSection } from './_sections/landingSection';
 import { ExperienceSection } from './_sections/experienceSection';
+import { ProjectsSection } from './_sections/projectsSection';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <LandingSection />
       <AboutSection />
       <ExperienceSection />
+      <ProjectsSection />
     </main>
   )
 }
