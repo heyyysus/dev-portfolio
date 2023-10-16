@@ -36,13 +36,13 @@ const Navigation: React.FC = () => {
   return (
     <>
       <nav className="bg-blue-dark flex justify-between w-fill font-mono text-sm md:static fixed w-screen">
-        <div className='py-7'>
+        <div className='py-2'>
           <Link href="/">
             <Image src='/images/logo/logo 2.png' alt='logo' width={100} height={100} />
           </Link>
         </div>
-        <div className='md:block hidden p-6'>
-          <ul className="flex">
+        <div className='md:block hidden pr-6'>
+          <ul className="flex items-center">
             <li>
               <NavItem label='About' href='#about' onClick={handleLinkClick} />
             </li>
@@ -53,7 +53,7 @@ const Navigation: React.FC = () => {
               <NavItem label='Projects' href='#projects' onClick={handleLinkClick} />
             </li>
             <li>
-              <div className='mt-[15px] ml-4'>
+              <div className='ml-4'>
                 <DownloadBtn href='/files/Resume_Jesus_Velarde.pdf'>
                   <ArticleIcon /> 
                   <span className='ml-2 pt-0.5'>Resume</span>
@@ -62,7 +62,7 @@ const Navigation: React.FC = () => {
             </li>
           </ul>
         </div>
-        <div className='md:hidden block mt-6 mr-6'>
+        <div className='md:hidden block mt-2 mr-6'>
           <MenuBtn onClick={handleMenuClick} />
         </div>
         
