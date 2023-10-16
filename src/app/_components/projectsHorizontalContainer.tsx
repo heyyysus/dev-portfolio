@@ -7,7 +7,7 @@ export interface ProjectsHorizontalContainerProps {
 
 export const ProjectsHorizontalContainer: FC<ProjectsHorizontalContainerProps> =  ({ projects }) => {
     return (
-    <div className="flex flex-row overflow-x-auto w-4/5">
+    <div className="flex md:flex-row flex-col md:overflow-x-auto md:w-4/5">
         {projects.map((project, index) => {
             return (
                 <ProjectCard key={index} project={project} />

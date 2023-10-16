@@ -17,7 +17,7 @@ export const ProjectCard: FC<ProjectCardProps> =  ({ project }) => {
         Outer div must have 'flex-shrink-0' class to prevent it from shrinking
     */}
     return (
-    <div className={`w-72 mr-12 flex-shrink-0 shadow-lg hover:cursor-grab relative`}>
+    <div className={`w-72 md:mr-12 md:mb-0 mt-6 mb-6 flex-shrink-0 shadow-lg hover:cursor-grab md:relative`}>
 
         {/* Dark overlay that appears when hovered over */}
         <div className={`absolute inset-0 bg-[#000] opacity-0 hover:opacity-70 
@@ -31,7 +31,7 @@ export const ProjectCard: FC<ProjectCardProps> =  ({ project }) => {
         {/** Placeholder for image, green solid color for now */}
         </div>
         {/** Project card */}
-        <div className='p-6 h-40 border-b-2 border-t-none border-l-2 border-r-2 border-grey rounded-b-md'>
+        <div className='p-6 h-40 border-b-2 border-t-none border-l-2 border-r-2 border-grey rounded-b-md bg-white'>
             <p className="text-2xl font-bold">
                 {project.title}
             </p>
