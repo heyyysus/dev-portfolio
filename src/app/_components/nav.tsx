@@ -9,6 +9,7 @@ import { DownloadBtn } from './downloadBtn';
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuBtn from './menuBtn';
 import DownloadIcon from '@mui/icons-material/Download';
+import Image from 'next/image';
 
 const Navigation: React.FC = () => {
 
@@ -34,11 +35,13 @@ const Navigation: React.FC = () => {
 
   return (
     <>
-      <nav className="bg-blue-dark flex justify-between w-fill px-10 font-mono text-sm md:static fixed w-screen">
+      <nav className="bg-blue-dark flex justify-between w-fill font-mono text-sm md:static fixed w-screen">
         <div className='py-7'>
-          Logo
+          <Link href="/">
+            <Image src='/images/logo/logo 2.png' alt='logo' width={100} height={100} />
+          </Link>
         </div>
-        <div className='md:block hidden'>
+        <div className='md:block hidden p-6'>
           <ul className="flex">
             <li>
               <NavItem label='About' href='#about' onClick={handleLinkClick} />
@@ -59,7 +62,7 @@ const Navigation: React.FC = () => {
             </li>
           </ul>
         </div>
-        <div className='md:hidden block'>
+        <div className='md:hidden block mt-6 mr-6'>
           <MenuBtn onClick={handleMenuClick} />
         </div>
         
