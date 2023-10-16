@@ -35,7 +35,7 @@ const Navigation: React.FC = () => {
 
   return (
     <>
-      <nav className="bg-blue-dark flex justify-between w-fill font-mono text-sm md:static fixed w-screen">
+      <nav className="bg-blue-dark flex justify-between w-fill font-mono text-sm md:static fixed w-screen z-10">
         <div className='py-2 ml-2'>
           <Link href="/">
             <Image src='/images/logo/logo 2.png' alt='logo' width={75} height={75} />
