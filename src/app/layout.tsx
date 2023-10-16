@@ -18,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Jesus Velarde</title>
+        <link rel="icon" href="/images/icon.png" />
       </head>
       <body>
         <Navigation />
