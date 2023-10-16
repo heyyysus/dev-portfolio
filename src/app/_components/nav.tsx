@@ -38,7 +38,7 @@ const Navigation: React.FC = () => {
       <nav className="bg-blue-dark flex justify-between w-fill font-mono text-sm md:static fixed w-screen">
         <div className='py-2'>
           <Link href="/">
-            <Image src='/images/logo/logo 2.png' alt='logo' width={100} height={100} />
+            <Image src='/images/logo/logo 2.png' alt='logo' width={75} height={75} />
           </Link>
         </div>
         <div className='md:block hidden pr-6'>
@@ -62,7 +62,7 @@ const Navigation: React.FC = () => {
             </li>
           </ul>
         </div>
-        <div className='md:hidden block mt-2 mr-6'>
+        <div className='md:hidden block mr-6'>
           <MenuBtn onClick={handleMenuClick} />
         </div>
         
