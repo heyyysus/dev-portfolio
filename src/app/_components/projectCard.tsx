@@ -14,8 +14,7 @@ export interface ProjectCardProps {
 
 export const ProjectCard: FC<ProjectCardProps> =  ({ project }) => {
     return (
-    <div className={`inline-block box-border content-center w-full h-full border-2 border-grey 
-                    rounded-md shadow-sm py-10 px-10`}>
+    <div className={`border-2 border-grey rounded-md shadow-sm py-10 px-10 w-96 h-96 mr-4 flex-shrink-0`}>
         <p className="text-2xl font-bold">
             {project.title}
         </p>

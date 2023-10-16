@@ -23,6 +23,10 @@ export const ProjectsSection: FC<ProjectsSectionProps> =  ({}) => {
             title: 'Project 4',
             description: 'This is a description of project 4',
         },
+        {
+            title: 'Project 5',
+            description: 'This is a description of project 4',
+        },
     ]
 
     return (
@@ -31,5 +35,6 @@ export const ProjectsSection: FC<ProjectsSectionProps> =  ({}) => {
             className="flex flex-col justify-center items-center content-center min-h-screen w-screen bg-white">
             <ProjectsHorizontalContainer projects={projects} />
         </div>
+        
     );
 };
