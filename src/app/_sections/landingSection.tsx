@@ -26,12 +26,12 @@ export const LandingSection: FC<LandingSectionProps> =  ({}) => {
             </p>
 
           <div className='flex flex-row content-center items-center mt-10 animate-fadeInSlow text-grey'>
-            <a href='https://github.com/heyyysus' className='hover:text-white transition-color mr-5'>
+            <a href='https://github.com/heyyysus' target='_blank' className='hover:text-white transition-color mr-5'>
               <GitHubIcon sx={{
                 fontSize: 50,
               }}  />
             </a>
-            <a href='https://www.linkedin.com/in/jesus-velarde-arvayo-117958207/' className='hover:text-white transition-color pt-1.5'>
+            <a href='https://www.linkedin.com/in/jesus-velarde-arvayo-117958207/' target='_blank' className='hover:text-white transition-color pt-1.5'>
               <LinkedInIcon sx={{
                 fontSize: 60,
               }}  />
