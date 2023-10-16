@@ -21,7 +21,7 @@ export const ProjectCard: FC<ProjectCardProps> =  ({ project }) => {
 
         {/* Dark overlay that appears when hovered over */}
         <div className={`absolute inset-0 bg-[#000] opacity-0 hover:opacity-70 
-        z-10 transition-opacity duration-300 rounded-b-md rounded-t-xl flex items-center justify-center`}>
+        z-10 transition-opacity duration-300 rounded-b-md rounded-t-xl md:flex hidden items-center justify-center md:display`}>
             <p className="text-white text-center font-mono text-base mt-2">
                 View More 
             </p>
