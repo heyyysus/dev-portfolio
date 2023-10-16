@@ -17,3 +17,8 @@ export default function Home() {
     </main>
   )
 }
+
+export const metadata = {
+  title: "Jesus Velarde",
+  description: "Jesus Velarde's personal portfolio",
+}
