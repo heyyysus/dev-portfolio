@@ -8,21 +8,19 @@ export const ProjectsSection: FC<ProjectsSectionProps> =  ({}) => {
 
     const projects: Project[] = [
         {
-            title: 'Hoppin',
-            description: 'A social media app for sharing events build with AWS Lambda, RDS, and React',
+            title: "Refract",
+            description: "An application winning second play at the UCSB Data Science Club Showcase created to cloak images of faces to disrupt ML facial recognition and training",
         },
+
         {
-            title: 'Elegant Nails',
-            description: 'A website for a nail salon built with Next.js and TailwindCSS',
+            title: 'Hoppin',
+            description: 'A social media app for sharing events built with AWS Lambda, RDS, and React',
         },
         {
             title: 'Blockchain at UCSB',
             description: 'Custom made website created in Next.js for the Blockchain at UCSB student organization',
         },
-        {
-            title: 'Sounds of IV',
-            description: 'Simply but stylish website for a local student-run music promoting organization in Isla Vista, CA',
-        },
+        
     ]
 
     return (
