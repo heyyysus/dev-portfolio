@@ -15,7 +15,7 @@ export const AboutSection: FC<AboutSectionProps> =  ({}) => {
             <p className='md:text-base text-sm text-grey font-mono animate-fadeIn'>
               I&apos;m a Full-Stack Developer with a passion for creating
               beautiful and functional web applications. I graduated with
-              a Bachelor's of Science in Computer Science at the 
+              a Bachelor&apos;s of Science in Computer Science at the 
               University of California, Santa Barbara. 
             </p>
             <p className='md:text-base text-sm text-grey font-mono mt-4 animate-fadeIn'>
