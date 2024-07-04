@@ -9,7 +9,7 @@ export const ProjectsSection: FC<ProjectsSectionProps> =  ({}) => {
     const projects: Project[] = [
         {
             title: "Refract",
-            description: "An application winning second play at the UCSB Data Science Club Showcase created to cloak images of faces to disrupt ML facial recognition and training",
+            description: "An application winning second place at the UCSB Data Science Club Showcase created to cloak images of faces to disrupt ML facial recognition and training",
         },
 
         {
