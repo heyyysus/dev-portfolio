@@ -14,9 +14,9 @@ export const AboutSection: FC<AboutSectionProps> =  ({}) => {
             <h1 className='text-2xl font-bold text-white mb-5 animate-fadeInFast'>About Me</h1>
             <p className='md:text-base text-sm text-grey font-mono animate-fadeIn'>
               I&apos;m a Full-Stack Developer with a passion for creating
-              beautiful and functional web applications. I&apos;m currently
-              in my 4th year studying Computer Science at the 
-              University of California - Santa Barbara. 
+              beautiful and functional web applications. I graduated with
+              a Bachelor's of Science in Computer Science at the 
+              University of California, Santa Barbara. 
             </p>
             <p className='md:text-base text-sm text-grey font-mono mt-4 animate-fadeIn'>
               Outside of school, I develop web applications for clients and work on personal projects.
