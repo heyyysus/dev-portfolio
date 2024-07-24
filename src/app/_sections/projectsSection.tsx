@@ -1,6 +1,7 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import { Project } from '../_components/projectCard';
 import { ProjectsHorizontalContainer } from '../_components/projectsHorizontalContainer';
+import { ProjectModal } from '../_components/projectModal';
 
 export interface ProjectsSectionProps {};
 
@@ -23,11 +24,16 @@ export const ProjectsSection: FC<ProjectsSectionProps> =  ({}) => {
         
     ]
 
+    const [shownProject, setShownProject] = useState<Project | null>(null);
+
     return (
         <div 
             id="projects"
             className="flex flex-col justify-center items-center content-center min-h-screen w-screen bg-white">
             <ProjectsHorizontalContainer projects={projects} />
+
+            <ProjectModal project={shownProject} />
+
         </div>
         
     );
