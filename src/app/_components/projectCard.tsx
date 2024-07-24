@@ -10,14 +10,18 @@ export interface Project {
 
 export interface ProjectCardProps {
     project: Project;
+    handleOnClick: (project: Project) => void;
 };
 
-export const ProjectCard: FC<ProjectCardProps> =  ({ project }) => {
+export const ProjectCard: FC<ProjectCardProps> =  ({ project, handleOnClick }) => {
     {/**
         Outer div must have 'flex-shrink-0' class to prevent it from shrinking
     */}
     return (
-    <div className={`w-72 md:mr-12 md:mb-0 mt-8 mb-8 flex-shrink-0 shadow-lg hover:cursor-grab md:relative`}>
+    <div 
+        className={`w-72 md:mr-12 md:mb-0 mt-8 mb-8 flex-shrink-0 shadow-lg hover:cursor-grab md:relative`} 
+        onClick={ (e) => handleOnClick(project) }
+    >
 
         {/* Dark overlay that appears when hovered over */}
         <div className={`absolute inset-0 bg-[#000] opacity-0 hover:opacity-70 
