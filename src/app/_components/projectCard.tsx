@@ -1,4 +1,6 @@
-import { FC } from 'react';
+'use client';
+import { FC, useState } from 'react';
+import { ProjectModal  } from './projectModal';
 
 export interface Project {
     title: string;
@@ -16,8 +18,22 @@ export const ProjectCard: FC<ProjectCardProps> =  ({ project }) => {
     {/**
         Outer div must have 'flex-shrink-0' class to prevent it from shrinking
     */}
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    // Add onClick event handler to open modal
+    const handleClick = () => {
+        setIsOpen(true);            
+    }
+
+    const handleClose = () => {
+        setIsOpen(false);
+    }
+
     return (
-    <div className={`w-72 md:mr-12 md:mb-0 mt-8 mb-8 flex-shrink-0 shadow-lg hover:cursor-grab md:relative`}>
+    <div className={`w-72 md:mr-12 md:mb-0 mt-8 mb-8 flex-shrink-0 shadow-lg hover:cursor-grab md:relative`} onClick={ e => handleClick() }>
+
+        <ProjectModal project={project} isOpen={true} handleClose={handleClose} />
 
         {/* Dark overlay that appears when hovered over */}
         <div className={`absolute inset-0 bg-[#000] opacity-0 hover:opacity-70 
