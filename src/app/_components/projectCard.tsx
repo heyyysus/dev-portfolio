@@ -2,7 +2,8 @@ import { FC } from 'react';
 
 export interface Project {
     title: string;
-    description: string;
+    short_desc: string;
+    long_desc: string;
     image?: string;
     demo_url?: string;
     github_url?: string;
@@ -40,7 +41,7 @@ export const ProjectCard: FC<ProjectCardProps> =  ({ project, handleOnClick }) =
                 {project.title}
             </p>
             <p className="md:text-xs text-sm text-grey-dark font-mono mt-2">
-                {project.description}
+                {project.short_desc}
             </p>
         </div>
     </div>

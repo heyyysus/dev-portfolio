@@ -1,0 +1,8 @@
+{
+    "title": "Refract",
+    "short_desc": "Winning second place at the UCSB Data Science Club Showcase, this application cloaks facial images to disrupt machine learning-based facial recognition and training processes",
+    "long_desc": "Winning second place at the UCSB Data Science Club Showcase, this application cloaks facial images to disrupt machine learning-based facial recognition and training processes",
+    "image": "/images/projects/refract.png",
+    "demo_url": "https://hoppin.jesusvelarde.com",
+    "github_url": "https://github.com/heyyysus/hoppin"
+}

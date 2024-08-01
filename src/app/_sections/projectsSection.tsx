@@ -4,25 +4,16 @@ import { Project } from '../_components/projectCard';
 import { ProjectsHorizontalContainer } from '../_components/projectsHorizontalContainer';
 import { ProjectModal } from '../_components/projectModal';
 
+import RefractProject from '../../../content/projects/refract.json';
+import HoppinProject from '../../../content/projects/hoppin.json';
+
 export interface ProjectsSectionProps {};
 
 export const ProjectsSection: FC<ProjectsSectionProps> =  ({}) => {
 
     const projects: Project[] = [
-        {
-            title: "Refract",
-            description: "Winning second place at the UCSB Data Science Club Showcase, this application cloaks facial images to disrupt machine learning-based facial recognition and training processes",
-        },
-
-        {
-            title: 'Hoppin',
-            description: 'A social media app for sharing events built with AWS Lambda, RDS, and React',
-        },
-        {
-            title: 'Blockchain at UCSB',
-            description: 'Custom made website created in Next.js for the Blockchain at UCSB student organization',
-        },
-        
+        RefractProject,
+        HoppinProject
     ]
 
     const [shownProject, setShownProject] = useState<Project | null>(null);
