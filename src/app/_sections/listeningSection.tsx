@@ -44,7 +44,7 @@ export const ListeningSection = async ({}: ListeningSectionProps) => {
     return (
         <div
             id="listening"
-            className="flex flex-row justify-center items-center bg-white min-h-screen w-full">
+            className="flex flex-row justify-center items-center bg-blue-dark min-h-screen w-full">
             <div className="font-sans md:w-[700px] w-[90vw] p-10 bg-blue-dark rounded-md">
                 <h1 className="text-2xl font-bold text-white mb-8 animate-fadeInFast">
                     What I&apos;m Listening To
