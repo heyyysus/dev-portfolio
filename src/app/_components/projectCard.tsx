@@ -20,12 +20,16 @@ export const ProjectCard: FC<ProjectCardProps> =  ({ project }) => {
     <div className={`w-72 md:mr-12 md:mb-0 mt-8 mb-8 flex-shrink-0 shadow-lg hover:cursor-grab md:relative`}>
 
         {/* Dark overlay that appears when hovered over */}
-        <div className={`absolute inset-0 bg-[#000] opacity-0 hover:opacity-70 
+        <a
+            href={project.github_url ?? project.demo_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`absolute inset-0 bg-[#000] opacity-0 hover:opacity-70
         z-10 transition-opacity duration-300 rounded-b-md rounded-t-xl md:flex hidden items-center justify-center md:display`}>
             <p className="text-white text-center font-mono text-base mt-2">
-                View More 
+                View More
             </p>
-        </div>
+        </a>
 
         <div className='w-full h-32 bg-green rounded-t-xl'>
         {/** Placeholder for image, green solid color for now */}

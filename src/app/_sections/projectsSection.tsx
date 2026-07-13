@@ -20,7 +20,12 @@ export const ProjectsSection: FC<ProjectsSectionProps> =  ({}) => {
             title: 'Blockchain at UCSB',
             description: 'Custom made website created in Next.js for the Blockchain at UCSB student organization',
         },
-        
+        {
+            title: 'CloudMS',
+            description: 'A cloud-native CMS built for independent insurance agencies, replacing spreadsheets, legacy agency management software, and manual carrier data entry with a single system of record for clients, policies, vehicles, and carriers. TypeScript/Express/PostgreSQL backend with a Vite/React frontend, Google SSO, and CI/CD via GitHub Actions.',
+            github_url: 'https://github.com/heyyysus/CloudMS',
+        },
+
     ]
 
     return (
