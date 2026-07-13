@@ -1,4 +1,6 @@
-import { FC } from 'react';
+'use client';
+import { FC, useState } from 'react';
+import { ProjectModal } from './projectModal';
 
 export interface Project {
     title: string;
@@ -16,20 +18,21 @@ export const ProjectCard: FC<ProjectCardProps> =  ({ project }) => {
     {/**
         Outer div must have 'flex-shrink-0' class to prevent it from shrinking
     */}
+    const [modalOpen, setModalOpen] = useState(false);
+
     return (
-    <div className={`w-72 md:mr-12 md:mb-0 mt-8 mb-8 flex-shrink-0 shadow-lg hover:cursor-grab md:relative`}>
+    <>
+    <div
+        onClick={() => setModalOpen(true)}
+        className={`w-72 md:mr-12 md:mb-0 mt-8 mb-8 flex-shrink-0 shadow-lg hover:cursor-pointer md:relative`}>
 
         {/* Dark overlay that appears when hovered over */}
-        <a
-            href={project.github_url ?? project.demo_url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`absolute inset-0 bg-[#000] opacity-0 hover:opacity-70
+        <div className={`absolute inset-0 bg-[#000] opacity-0 hover:opacity-70
         z-10 transition-opacity duration-300 rounded-b-md rounded-t-xl md:flex hidden items-center justify-center md:display`}>
             <p className="text-white text-center font-mono text-base mt-2">
                 View More
             </p>
-        </a>
+        </div>
 
         <div className='w-full h-32 bg-green rounded-t-xl'>
         {/** Placeholder for image, green solid color for now */}
@@ -44,5 +47,9 @@ export const ProjectCard: FC<ProjectCardProps> =  ({ project }) => {
             </p>
         </div>
     </div>
+    {modalOpen && (
+        <ProjectModal project={project} onClose={() => setModalOpen(false)} />
+    )}
+    </>
     );
 };
