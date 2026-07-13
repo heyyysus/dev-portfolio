@@ -53,6 +53,9 @@ const Navigation: React.FC = () => {
               <NavItem label='Projects' href='#projects' onClick={handleLinkClick} />
             </li>
             <li>
+              <NavItem label='Listening' href='#listening' onClick={handleLinkClick} />
+            </li>
+            <li>
               <div className='ml-4'>
                 <DownloadBtn href='/files/Resume_Jesus_Velarde.pdf'>
                   <ArticleIcon /> 
@@ -83,6 +86,9 @@ const Navigation: React.FC = () => {
               </li>
               <li className=''>
                 <NavItem label='Projects' href='#projects' onClick={handleLinkClick} />
+              </li>
+              <li className=''>
+                <NavItem label='Listening' href='#listening' onClick={handleLinkClick} />
               </li>
               <li className='mt-5'>
               <a 
