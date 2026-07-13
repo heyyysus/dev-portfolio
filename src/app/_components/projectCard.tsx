@@ -35,11 +35,11 @@ export const ProjectCard: FC<ProjectCardProps> =  ({ project }) => {
         {/** Placeholder for image, green solid color for now */}
         </div>
         {/** Project card */}
-        <div className='p-6 h-48 border-b-2 border-t-none border-l-2 border-r-2 border-grey rounded-b-md bg-white'>
+        <div className='p-6 pb-8 h-48 border-b-2 border-t-none border-l-2 border-r-2 border-grey rounded-b-md bg-white'>
             <p className="text-2xl font-bold">
                 {project.title}
             </p>
-            <p className="md:text-xs text-sm text-grey-dark font-mono mt-2">
+            <p className="md:text-xs text-sm text-grey-dark font-mono mt-2 line-clamp-4">
                 {project.description}
             </p>
         </div>
